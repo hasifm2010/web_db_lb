@@ -38,7 +38,7 @@
 
 
 - name: Stop firewalld
-  service: name: firewalld state=stopped enabled=no
+  service: name=firewalld state=stopped enabled=no
 
 # work around RHEL 7, for now
 #- name: insert iptables template
