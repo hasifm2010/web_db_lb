@@ -28,6 +28,9 @@
   yum: name=ntp state=present
   tags: ntp
 
+- name: disable SELinux
+  selinux: state=disabled
+
 - name: Configure ntp file
   template: src=ntp.conf.j2 dest=/etc/ntp.conf
   tags: ntp

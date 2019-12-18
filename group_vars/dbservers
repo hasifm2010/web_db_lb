@@ -6,4 +6,4 @@ mysqlservice: mariadb
 mysql_port: 3306
 dbuser: app_user
 dbname: test_db
-password: redhat
+upassword: redhat

@@ -11,7 +11,7 @@ iface: enp7s0
 #iface: '{{ ansible_default_ipv4.interface }}'
 
 # this is the repository that holds our sample webapp
-repository: git@github.com:hasifm2010/web_db.git
+repository: 'https://github.com/hasifm2010/web_db.git'
 
 # this is the sha1sum of V5 of the test webapp.
-webapp_version: 2dd28dab6ce01b180e460a72d9039ff44512c243
+webapp_version: 134faf991a9221c25f006a4b7751a025a49df678

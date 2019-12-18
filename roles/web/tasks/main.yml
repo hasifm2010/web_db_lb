@@ -1,3 +1,11 @@
 ---
+
+- name: Delete old source codes
+  shell: rm -rf /var/www/html/* 
+
 - name: Copy the code from repository
-  git: repo={{ repository }} version={{ webapp_version }} dest=/var/www/html/
+  git: repo={{ repository }} version={{ webapp_version }} dest=/var/www/html/ force=yes
+
+
+#- name: Copy the code from repository
+#  git: repo={{ repository }} dest=/var/www/html/
